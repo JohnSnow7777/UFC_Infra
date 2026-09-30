@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(주)유에프씨인프라 중장기 경영전략 및 스케일업 마스터 로드맵 (2026~2028)</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: #0f172a !important; }
+      .page-break { page-break-after: always; }
+      .card-print { border: 1px solid #cbd5e1 !important; background: white !important; color: #0f172a !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen">
+
+  <!-- Header & Navigation -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-sky-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20 text-lg">
+          UFC
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-lg text-white tracking-tight">(주)유에프씨인프라</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Schneider Electric APC 공식 파트너</span>
+          </div>
+          <p class="text-xs text-slate-400">데이터센터 인프라 딥테크 솔루션 & 정책금융·세제 전략 종합 보고서</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700 text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          2026~2028 SSOT 연계 공인 컨설팅 보고서
+        </span>
+        <button onclick="window.print()" class="no-print px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium transition flex items-center gap-1.5 shadow-sm">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+          보고서 인쇄 / PDF 저장
+        </button>
+      </div>
+    </div>
+    
+    <!-- Quick Nav -->
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto no-print scrollbar-none border-t border-slate-800/60">
+      <div class="flex gap-2 text-xs font-medium whitespace-nowrap">
+        <a href="#executive-summary" class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 hover:bg-slate-700 transition">경영 요약 & 비전</a>
+        <a href="#timeline-master" class="px-2.5 py-1 rounded-md bg-indigo-950/80 text-indigo-300 border border-indigo-800 hover:bg-indigo-900 transition">3개년 시계열 로드맵</a>
+        <a href="#gov-funding-deeptech" class="px-2.5 py-1 rounded-md bg-amber-950/80 text-amber-300 border border-amber-800 hover:bg-amber-900 transition">정부지원사업 & R&D</a>
+        <a href="#ip-voucher-track" class="px-2.5 py-1 rounded-md bg-emerald-950/80 text-emerald-300 border border-emerald-800 hover:bg-emerald-900 transition">★ 특허 & 바우처 지원사업</a>
+        <a href="#cert-tax-regional" class="px-2.5 py-1 rounded-md bg-sky-950/80 text-sky-300 border border-sky-800 hover:bg-sky-900 transition">★ 기업인증 풀세트 & 영등포·과밀세제</a>
+        <a href="#employment-benefits" class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 hover:bg-slate-700 transition">인사·노무 & 고용지원금</a>
+        <a href="#enterprise-risk" class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 hover:bg-slate-700 transition">글로벌 계약 & CGL</a>
+        <a href="#corporate-governance" class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 hover:bg-slate-700 transition">정관 & 지배구조</a>
+        <a href="#administrative-checklist" class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 hover:bg-slate-700 transition">실무 사전 점검표</a>
+        <a href="#calculator" class="px-2.5 py-1 rounded-md bg-purple-950/80 text-purple-300 border border-purple-800 hover:bg-purple-900 transition">경제효과 시뮬레이터</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+    <!-- Hero / Title -->
+    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 border border-slate-700 p-6 md:p-8 shadow-2xl">
+      <div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-indigo-500/10 blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-16 -bottom-16 w-80 h-80 rounded-full bg-sky-500/10 blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs font-semibold border border-indigo-500/20">
+          Executive Management Advisory Report (SSOT Integrated)
+        </div>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-snug">
+          (주)유에프씨인프라 중장기 경영전략 및 스케일업 로드맵
+        </h1>
+        <p class="text-sm md:text-base text-slate-300 max-w-4xl leading-relaxed">
+          슈나이더 일렉트릭 APC 파트너십 기반의 검증된 하드웨어 신뢰성과 자문위원(가족)의 공인 전문 자격(기업인증지도사·기술창업지도사·기술거래사·ISO 심사원)을 결합하고, 
+          정부의 <strong>「AI 데이터센터 특별법」·「PUE 1.3 규제」·「피지컬 AI」</strong> 기조와 
+          <strong>영등포구 과밀억제권역 세무 전략 및 특허(IP)·기업인증 풀세트</strong>를 집대성한 공식 경영 전략서입니다.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 1: 경영 요약 & 비전 (Executive Summary) -->
+    <section id="executive-summary" class="space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Section 1</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">경영 요약 & 비즈니스 포지셔닝</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Strategic Vision</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xs">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-2.5">
+          <div class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center font-bold text-sm">01</div>
+          <strong class="text-white text-sm block">비즈니스 모델 고도화</strong>
+          <p class="text-slate-300 leading-relaxed">
+            단순 외산 장비 납품(마진 5~10%) 중심에서 고마진 <strong>정기 유지보수(MA, 마진 20~40%)</strong> 및 <strong>피지컬 AI 기반 PUE 최적화 기술 엔지니어링 SI</strong>로 비즈니스 포트폴리오를 대전환합니다.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-2.5">
+          <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold text-sm">02</div>
+          <strong class="text-white text-sm block">국가 R&D 및 특허(IP) 레버리지</strong>
+          <p class="text-slate-300 leading-relaxed">
+            IP나래(2,500만) 특허 포트폴리오 구축을 발판으로 디딤돌 R&D(1.5억), 초기창업패키지 딥테크형(1.5억), TIPS(8억~15억)를 연속 수주하여 <strong>출연금 중심의 자율 제어 소프트웨어 국산화</strong>를 추진합니다.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-2.5">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold text-sm">03</div>
+          <strong class="text-white text-sm block">지역 정책금융 & 벤처 세제감면</strong>
+          <p class="text-slate-300 leading-relaxed">
+            영등포구 중소기업기금(연 1.5% 고정금리 2억)을 조달하고, 과밀억제권역 한계를 극복하기 위해 <strong>벤처기업 인증을 통한 법인세 50% 세액감면(조특법 제6조 제2항)</strong>을 확정합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3개년 시계열 스케일업 마스터 로드맵 -->
+    <section id="timeline-master" class="space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Section 2</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">3개년 시계열 스케일업 마스터플랜 (2026~2028)</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-indigo-950 text-indigo-300 border border-indigo-800">Master Milestone</span>
+      </div>
+
+      <div class="space-y-4 text-xs md:text-sm">
+        
+        <!-- 단계 0: 창업 초기 기초 행정 인프라 확립 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded bg-indigo-500/20 text-indigo-300 font-extrabold text-xs">STAGE 0</span>
+              <strong class="text-white text-base">설립 초기 : 제도적 기반 확립 & 사전 요건 정비 (D-Day ~ 1개월)</strong>
+            </div>
+            <span class="text-indigo-400 text-xs font-medium">조직 기초 인프라 세팅</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="space-y-2">
+              <strong class="text-slate-200 block font-bold">📌 핵심 추진 과제:</strong>
+              <ul class="space-y-1 text-slate-300 list-disc list-inside">
+                <li><strong>사업자등록 및 고용보험 업종 정비:</strong> 주/부업종에 <span class="text-indigo-300 font-semibold">62021(컴퓨터시스템 통합 구축)</span> 추가 및 근로복지공단 고용보험 주업종 변경신고 완료.</li>
+                <li><strong>원시정관 7대 규정 전면 정비:</strong> 임원 보수·상여·퇴직금(2배수 지급규정), 유족보상, 주식매수선택권(스톡옵션), 자기주식 취득 규정 신설 및 공증.</li>
+                <li><strong>고용24 기업 사전 참여 승인:</strong> 채용 전 기업 사전 참여 승인을 완료하여 청년도약장려금(720만원) 수급 자격 선확보.</li>
+              </ul>
+            </div>
+            <div class="p-3 bg-slate-950 border border-slate-800 rounded-lg space-y-1.5">
+              <strong class="text-sky-300 block font-bold">💡 실무 전략 포인트:</strong>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                대표자 연령과 무관하게 5인 미만 기업이 지식서비스 특례로 고용지원금 및 정부 R&D 자격을 인정받기 위한 필수 선결 과제입니다. 입사 전 정비가 완료되어야 채용 즉시 모든 행정이 원스톱으로 연동됩니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 단계 1: 엔지니어 영입 및 R&D 전담부서/특허/ISO 구축 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded bg-sky-500/20 text-sky-300 font-extrabold text-xs">STAGE 1</span>
+              <strong class="text-white text-base">1년차 상반기 : 엔지니어 영입, R&D 전담부서 인가, IP나래 특허 구축 (D+2~4개월)</strong>
+            </div>
+            <span class="text-sky-400 text-xs font-medium">기술력 공인 및 R&D 자격 확보</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="space-y-2">
+              <strong class="text-slate-200 block font-bold">📌 핵심 추진 과제:</strong>
+              <ul class="space-y-1 text-slate-300 list-disc list-inside">
+                <li><strong>전문 엔지니어 1인 정규직 채용:</strong> 이공계 학사 또는 전기/정보처리 기사 자격자 영입 (취업애로 청년 요건 검증).</li>
+                <li><strong>KOITA 연구개발전담부서 인가:</strong> 사무실 내 1m 이상 고정 파티션 구획 및 현판 부착 후 1인 전담부서 설립 완료 (R&D 주관기관 자격).</li>
+                <li><strong>특허청 IP나래 프로그램 수주 (2,500만원):</strong> 서울지식재산센터 지원으로 PUE 절감 독점 특허 1건 출원 및 IP 포트폴리오 구축.</li>
+                <li><strong>공공 특허 1건 기술이전 (기술거래사):</strong> 공공연/대학의 데이터센터 PUE 절감 미활용 특허를 법인 명의로 양수도 완료.</li>
+                <li><strong>ISO 9001 / 14001 / 45001 동시 구축:</strong> 자문위원(심사원) 지도 하에 안전보건 및 품질 경영시스템 심사 완료 (정부과제 가점 확보).</li>
+              </ul>
+            </div>
+            <div class="p-3 bg-slate-950 border border-slate-800 rounded-lg space-y-1.5">
+              <strong class="text-sky-300 block font-bold">💡 실무 전략 포인트:</strong>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                자문위원의 4대 전문 자격(기업인증지도사, 기술거래사, ISO 심사원)이 직접 투입되는 핵심 구간입니다. 외주 컨설팅 비용 수천만 원을 절감하면서 최단기간 내 공인 기술 인프라를 완성합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 단계 2: 벤처기업 인증 및 영등포구 저리기금/디딤돌 R&D 수주 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded bg-purple-500/20 text-purple-300 font-extrabold text-xs">STAGE 2</span>
+              <strong class="text-white text-base">1년차 하반기 : 벤처기업 인증, 디딤돌 R&D, 영등포구 저리기금 2억 조달 (D+6~8개월)</strong>
+            </div>
+            <span class="text-purple-400 text-xs font-medium">법인세 50% 감면 확정 & 정책자금 확보</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="space-y-2">
+              <strong class="text-slate-200 block font-bold">📌 핵심 추진 과제:</strong>
+              <ul class="space-y-1 text-slate-300 list-disc list-inside">
+                <li><strong>혁신성장유형 벤처기업 확인 획득:</strong> 기보 기술평가 통과 ➔ <span class="text-purple-300 font-bold">과밀억제권역 법인세 50% 세액감면(조특법 제6조 제2항) 확정</span>.</li>
+                <li><strong>영등포구 중소기업육성기금 조달 (2억원):</strong> 영등포구청 일자리경제과 신청, <span class="text-white font-bold">연 1.5% 고정금리 (1년 거치 4년 상환)</span> 자금 확보.</li>
+                <li><strong>정부지원 R&D 수주:</strong> 중기부 <span class="text-white font-bold">디딤돌 첫걸음 R&D(최대 1.5억)</span> 및 창진원 <span class="text-white font-bold">초기창업패키지 딥테크형(최대 1.5억)</span> 지원.</li>
+                <li><strong>1기 흑자 결산 관리:</strong> 무리한 경비 처리를 지양하고 영업이익 실현 및 부채비율 150% 이하 관리.</li>
+              </ul>
+            </div>
+            <div class="p-3 bg-slate-950 border border-slate-800 rounded-lg space-y-1.5">
+              <strong class="text-sky-300 block font-bold">💡 실무 전략 포인트:</strong>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                조달된 영등포구 연 1.5% 저리기금 2억원은 향후 2년차 전기공사업 면허 취득을 위한 자본금 증자 재원(1.5억) 및 공제조합 출자금으로 안전하게 예치·보존합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 단계 3: 자체 면허 등록 및 TIPS/소부장 전문기업/이노비즈 도약 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-extrabold text-xs">STAGE 3</span>
+              <strong class="text-white text-base">2~3년차 : 전기공사업 면허, TIPS(8억~15억), 소부장 전문기업, 이노비즈 (Scale-up)</strong>
+            </div>
+            <span class="text-emerald-400 text-xs font-medium">100억대 강소기업 안착</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="space-y-2">
+              <strong class="text-slate-200 block font-bold">📌 핵심 추진 과제:</strong>
+              <ul class="space-y-1 text-slate-300 list-disc list-inside">
+                <li><strong>자체 전기공사업 면허 취득:</strong> 자본금 1.5억 증자 + 기술자 3인 확보로 시공업 면허 정식 등록 (독자 턴키 시공 체제 완성).</li>
+                <li><strong>TIPS 프로그램 연계:</strong> 팁스 운영사 시드 2억 유치 ➔ <span class="text-emerald-300 font-bold">팁스 일반트랙(R&D 8억 + 사업화 1억)</span> 수주 ➔ 3년차 <span class="text-emerald-300 font-bold">딥테크 팁스(15억)</span> 후속 도약.</li>
+                <li><strong>소부장 전문기업 확인 (산업부):</strong> 피지컬 AI 엣지 제어기 OEM 제조 매출 비중 50% 달성 후 소부장 전문기업 등록 (병역특례/공공조달 우대).</li>
+                <li><strong>이노비즈(Inno-Biz) / 메인비즈(Main-Biz) 인증:</strong> 창업 3년 도래 시점에 기술/경영혁신형 기업 인증 획득.</li>
+                <li><strong>수출바우처(3천만원) 활용:</strong> 슈나이더 APAC 파트너십을 기반으로 베트남·인도네시아 AIDC 진출 트랙 가동.</li>
+              </ul>
+            </div>
+            <div class="p-3 bg-slate-950 border border-slate-800 rounded-lg space-y-1.5">
+              <strong class="text-sky-300 block font-bold">💡 실무 전략 포인트:</strong>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                단순 대리점의 한계를 완전히 벗어나, 자체 개발 피지컬 AI 소프트웨어와 공인 시공 면허를 결합한 고부가가치 EPC 엔지니어링 기업으로 기업가치가 10배 이상 상승합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: 정부지원사업 딥리서치 & AIDC 딥테크 R&D 수주 전략 -->
+    <section id="gov-funding-deeptech" class="space-y-6">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Section 3</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">정부지원사업 딥리서치 & AIDC 딥테크 R&D 수주 전략</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-amber-950 text-amber-300 border border-amber-800">2025~2027 R&D Roadmap</span>
+      </div>
+
+      <!-- 국가 정책 기조 & 딥테크 부합성 분석 -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 text-xs">
+        <div class="flex items-center gap-2 text-sm font-bold text-amber-300">
+          <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          1. 국가 정책 메가트렌드와 (주)유에프씨인프라의 딥테크 부합성
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-slate-300">
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1.5">
+            <strong class="text-white block font-bold text-xs">국가 AI 컴퓨팅 센터 2조원 인프라</strong>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              정부는 AI 3대 강국 도약을 위해 GPU 수만 장 규모의 AIDC 인프라를 확충 중입니다. 초고집적 GPU 발열로 인해 <strong>냉각 전력 병목(Bottleneck) 해소</strong>가 국가적 최우선 과제로 지정되었습니다.
+            </p>
+          </div>
+
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1.5">
+            <strong class="text-white block font-bold text-xs">「AI 데이터센터 특별법」 & PUE 1.3 규제</strong>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              「인공지능 데이터센터 특별법」(2026 제정, 2027 시행) 및 분산에너지법에 따라 신규 IDC는 <strong>PUE 1.3~1.4 이하 달성이 법적으로 의무화</strong>되며, 고효율 냉각 기술 도입 시 인허가 패스트트랙이 적용됩니다.
+            </p>
+          </div>
+
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1.5">
+            <strong class="text-amber-300 block font-bold text-xs">정부 3대 메가프로젝트: '피지컬 AI'</strong>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              단순 텍스트 LLM을 넘어 <strong>물리적 장비(공조기 팬, 냉매 밸브, UPS 배터리)를 AI가 직접 인지·판단·자율 제어</strong>하는 '피지컬 AI' 기술이 국가 핵심 R&D 분야로 지정되었습니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 딥테크 10대 분야 크로스오버 -->
+        <div class="p-4 bg-slate-950 rounded-lg border border-amber-900/40 text-[11px] space-y-2">
+          <div class="flex items-center justify-between">
+            <strong class="text-white font-bold">중기부 10대 초격차 딥테크 3대 핵심 분과 동시 충족 (Crossover Positioning)</strong>
+            <span class="text-amber-400 font-semibold">초격차 스타트업 1000+ 프로젝트 최적화</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            (주)유에프씨인프라는 <span class="text-emerald-400 font-semibold">① 친환경·에너지(PUE 1.3 저감 및 탄소중립)</span>, 
+            <span class="text-sky-400 font-semibold">② AI·빅데이터(설비 예지보전 및 강화학습 자율 제어)</span>, 
+            <span class="text-purple-400 font-semibold">③ 시스템반도체 인프라(고발열 NPU/GPU 랙의 열적 쓰로틀링 방지)</span>의 교집합에 위치하여, 
+            모든 정부 딥테크 공모에서 높은 가점과 평가위원의 호응을 이끌어낼 수 있는 최상의 기술적 위치를 점유하고 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 정부지원사업 비교 매트릭스 -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 text-xs">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-bold text-white">2. 2025~2027 주요 정부지원사업 타당성 비교 분석 매트릭스</h3>
+          <span class="text-[11px] text-slate-400">IRIS 및 K-Startup 공고 기준</span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-slate-300 border border-slate-800">
+            <thead class="bg-slate-950 text-slate-400 border-b border-slate-800 text-[11px]">
+              <tr>
+                <th class="p-2.5">트랙 구분</th>
+                <th class="p-2.5">지원사업명</th>
+                <th class="p-2.5">전담/주관기관</th>
+                <th class="p-2.5">정부지원 규모</th>
+                <th class="p-2.5">신청 시기</th>
+                <th class="p-2.5">지원 자격</th>
+                <th class="p-2.5">유에프씨인프라 맞춤 공략 전략</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-[11px]">
+              <tr class="bg-slate-950/40 hover:bg-slate-900/60">
+                <td class="p-2.5 font-bold text-sky-400">창업패키지</td>
+                <td class="p-2.5 font-semibold text-white">초기창업패키지 (딥테크형)</td>
+                <td class="p-2.5 text-slate-400">창진원 / 서울창경</td>
+                <td class="p-2.5 font-mono text-emerald-400 font-bold">최대 1.5억 원</td>
+                <td class="p-2.5">매년 1~2월</td>
+                <td class="p-2.5">창업 3년 이내</td>
+                <td class="p-2.5 text-slate-300">슈나이더 하드웨어 연동 피지컬 AI 엣지 제어기 시제품 제작 및 외산 레퍼런스 실적 강조 시 최우선 선정.</td>
+              </tr>
+              <tr class="bg-slate-950/40 hover:bg-slate-900/60">
+                <td class="p-2.5 font-bold text-indigo-400">R&D 첫걸음</td>
+                <td class="p-2.5 font-semibold text-white">디딤돌 창업성장기술개발</td>
+                <td class="p-2.5 text-slate-400">중기부 / TIPA (IRIS)</td>
+                <td class="p-2.5 font-mono text-emerald-400 font-bold">최대 1.5억 원</td>
+                <td class="p-2.5">연 2~3회 (1월, 4월)</td>
+                <td class="p-2.5">중기부 R&D 최초 수행</td>
+                <td class="p-2.5 text-slate-300">연구전담부서 인가 및 양수도 특허 1건으로 연구 역량 입증 후 "Modbus 엣지 제어기 개발"로 다이렉트 접수.</td>
+              </tr>
+              <tr class="bg-slate-950/40 hover:bg-slate-900/60">
+                <td class="p-2.5 font-bold text-purple-400">TIPS 트랙</td>
+                <td class="p-2.5 font-semibold text-white">TIPS 일반형 (2026 개편안)</td>
+                <td class="p-2.5 text-slate-400">중기부 / 엔젤투자협회</td>
+                <td class="p-2.5 font-mono text-emerald-400 font-bold">R&D 8억 + 사업화 1억</td>
+                <td class="p-2.5">분기별 정기 접수</td>
+                <td class="p-2.5">운영사 투자(2억) 유치</td>
+                <td class="p-2.5 text-slate-300">1년차 말~2년차 목표. 피지컬 AI 쿨링 제어 알고리즘 IR 피칭 후 2억 시드 투자 유치 및 총 9억원 수혈.</td>
+              </tr>
+              <tr class="bg-slate-950/40 hover:bg-slate-900/60">
+                <td class="p-2.5 font-bold text-purple-400">TIPS 후속</td>
+                <td class="p-2.5 font-semibold text-white">딥테크 팁스 (Deep Tech)</td>
+                <td class="p-2.5 text-slate-400">중기부</td>
+                <td class="p-2.5 font-mono text-emerald-400 font-bold">R&D 최대 15억 원</td>
+                <td class="p-2.5">일반팁스 완료 후</td>
+                <td class="p-2.5">12대 신산업, 후속투자 5억</td>
+                <td class="p-2.5 text-slate-300">3년차 고도화 트랙. 고밀도 GPU 랙 차세대 액침냉각(Immersion Cooling) 및 디지털 트윈 제어 과제로 진입.</td>
+              </tr>
+              <tr class="bg-slate-950/40 hover:bg-slate-900/60">
+                <td class="p-2.5 font-bold text-amber-400">오픈이노베이션</td>
+                <td class="p-2.5 font-semibold text-white">민관협력 오픈이노베이션</td>
+                <td class="p-2.5 text-slate-400">중기부 / 서울창경</td>
+                <td class="p-2.5 font-mono text-emerald-400 font-bold">PoC 자금 1.4억 원</td>
+                <td class="p-2.5">매년 상/하반기 (4월, 8월)</td>
+                <td class="p-2.5">창업 7년 이내 스타트업</td>
+                <td class="p-2.5 text-slate-300">SKT, KT Cloud, 네이버클라우드, LS ELECTRIC의 IDC 전력 절감/화재 예방 지정 수요과제 매칭 지원.</td>
+              </tr>
+              <tr class="bg-slate-950/40 hover:bg-slate-900/60">
+                <td class="p-2.5 font-bold text-emerald-400">정책금융</td>
+                <td class="p-2.5 font-semibold text-white">에너지이용합리화자금 (ESCO)</td>
+                <td class="p-2.5 text-slate-400">한국에너지공단</td>
+                <td class="p-2.5 font-mono text-emerald-400 font-bold">소요자금 100% 융자</td>
+                <td class="p-2.5">매월 1~10일 온라인</td>
+                <td class="p-2.5">에너지사용자 및 시공사</td>
+                <td class="p-2.5 text-slate-300">3년 거치 7년 상환, 1~2%대 초저리 정책금융. 고객사에 "초기자금 0원 인프라 교체" 제안 시 강력한 영업 무기.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 3단계 사업계획서 테마 로드맵 -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 text-xs">
+        <h3 class="text-sm font-bold text-white">3. 단계별 사업계획서 테마 및 킬러 키워드 로드맵 (초기 ➔ 도약 ➔ 고도화)</h3>
+
+        <div class="space-y-3">
+          <div class="p-3.5 bg-slate-950 rounded-lg border border-slate-800 space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2">
+              <span class="px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-bold text-[10px]">1년차 (초기 진입 트랙)</span>
+              <strong class="text-white text-xs">타겟 사업: 중기부 디딤돌 첫걸음 R&D (1.5억) / 초기창업패키지 딥테크형 (1.5억)</strong>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[10.5px]">사업계획서 권장 과제명:</span>
+              <strong class="text-sky-300 text-xs block mt-0.5">
+                "고밀도 GPU 서버 랙의 국소 핫스팟 제거를 위한 Modbus 프로토콜 기반 피지컬 AI InRow 쿨링 능동제어 엣지 시스템 개발"
+              </strong>
+            </div>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              <strong>핵심 내용:</strong> 슈나이더 NetBotz 센서망과 InRow 공조기 간 고속 산업용 통신 패킷을 수집하고, 랙 전·후면 차압 및 온도 구배 데이터를 기반으로 인버터 팬 RPM을 1% 단위로 비례 제어하는 강화학습(RL) 엣지 알고리즘 임베딩.
+            </p>
+          </div>
+
+          <div class="p-3.5 bg-slate-950 rounded-lg border border-slate-800 space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2">
+              <span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-bold text-[10px]">2년차 (도약 및 대기업 연계 트랙)</span>
+              <strong class="text-white text-xs">타겟 사업: TIPS 일반형 (R&D 8억+사업화 1억) / 민관협력 오픈이노베이션 (1.4억)</strong>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[10.5px]">사업계획서 권장 과제명:</span>
+              <strong class="text-purple-300 text-xs block mt-0.5">
+                "AIDC 전력망 과부하 방지를 위한 피지컬 AI 기반 모듈러 UPS-BESS 연계 Peak Shaving 및 무중단 자율 절체(Failover) 시스템"
+              </strong>
+            </div>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              <strong>핵심 내용:</strong> 한국전력 피크 시간대 요금제(TOU)와 연동하여 UPS 배터리 에너지를 능동 방전시켜 피크 전력을 삭감하고, 이상 징후 시 2ms 이내 무순간 절체를 보장하는 전력 계통 자율 관리 플랫폼 구축.
+            </p>
+          </div>
+
+          <div class="p-3.5 bg-slate-950 rounded-lg border border-slate-800 space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2">
+              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold text-[10px]">3년차 (초격차 고도화 트랙)</span>
+              <strong class="text-white text-xs">타겟 사업: 딥테크 팁스 (R&D 15억) / 초격차 스타트업 1000+ 프로젝트 (11억)</strong>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[10.5px]">사업계획서 권장 과제명:</span>
+              <strong class="text-emerald-300 text-xs block mt-0.5">
+                "100kW급 차세대 초고밀도 AI 랙을 위한 피지컬 AI 기반 디지털 트윈 하이브리드(InRow+액침냉각) 자율 열관리 플랫폼 개발"
+              </strong>
+            </div>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              <strong>핵심 내용:</strong> 3D 전산유체역학(CFD) 모델을 디지털 트윈 공간에 실시간 동기화하여 기류 유동 및 액침 냉각 CDU를 자율 제어함으로써 하이퍼스케일 AIDC 연평균 <strong>PUE 1.15 이하</strong> 달성.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: [신설] 특허(IP) & 바우처 지원사업 로드맵 -->
+    <section id="ip-voucher-track" class="space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Section 4 (IP & Voucher Track)</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">특허(IP) 지원사업 & 바우처 종합 포트폴리오</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">IP Protection & Vouchers</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 text-xs">
+        
+        <!-- 특허청 IP나래 프로그램 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-white text-base">특허청 IP나래 프로그램</h3>
+            <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800 font-bold text-[10px]">최대 2,500만원</span>
+          </div>
+
+          <p class="text-slate-300 leading-relaxed text-[11px]">
+            특허청 및 서울지식재산센터(RIPC) 주관으로 창업 7년 이내 기업에 100일간 전문 변리사 1:1 컨설팅을 제공하여 <strong>강력한 특허권 확보 및 IP 포트폴리오를 구축</strong>하는 필수 지원사업입니다.
+          </p>
+
+          <div class="space-y-2 text-[11px] text-slate-300">
+            <div class="p-2.5 bg-slate-950 rounded border border-slate-800">
+              <strong class="text-white block mb-0.5">지원 내용:</strong>
+              경쟁사 특허 침해 회피 맵 구축 + PUE 제어 핵심 특허 1건 출원 비용 전액 지원.
+            </div>
+            <div class="p-2.5 bg-slate-950 rounded border border-slate-800">
+              <strong class="text-emerald-300 block mb-0.5">신청 시기 및 자부담:</strong>
+              매년 2회(상반기 2~3월, 하반기 5~6월) 접수. 총사업비 2,500만원 중 정부 70% 지원, 현금 자부담은 15~20%(375만원 내외)로 극히 저렴.
+            </div>
+          </div>
+        </div>
+
+        <!-- 기타 지재권 바우처 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-white text-base">스타트업 지식재산바우처</h3>
+            <span class="px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800 font-bold text-[10px]">최대 1,700만원</span>
+          </div>
+
+          <p class="text-slate-300 leading-relaxed text-[11px]">
+            한국발명진흥회(KIPA) 주관으로 바우처를 발급받아 국내외 특허출원, 상표/디자인 등록, IP 가치평가 비용을 자유롭게 결제하는 사업입니다.
+          </p>
+
+          <div class="space-y-2 text-[11px] text-slate-300">
+            <div class="p-2.5 bg-slate-950 rounded border border-slate-800">
+              <strong class="text-white block mb-0.5">지원 규모:</strong>
+              소형(500만원), 중형(1,000만원), 대형(1,700만원) 한도 내 바우처 지급 (기업 자부담 30%).
+            </div>
+            <div class="p-2.5 bg-slate-950 rounded border border-slate-800">
+              <strong class="text-sky-300 block mb-0.5">기술거래사 연계 특허 나눔:</strong>
+              산업통상자원부 '기술나눔' 및 'Tech-Market'을 통해 대기업·공공연의 미활용 특허를 <strong>무상 또는 소액(200만원)에 양수도</strong>하여 1년차 특허 수량을 2~3건으로 급팽창시킴.
+            </div>
+          </div>
+        </div>
+
+        <!-- 수출바우처 & 혁신바우처 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-white text-base">수출바우처 & 혁신바우처</h3>
+            <span class="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800 font-bold text-[10px]">최대 3,000만~5,000만원</span>
+          </div>
+
+          <p class="text-slate-300 leading-relaxed text-[11px]">
+            KOTRA/중진공 주관 바우처 사업으로 판로 개척과 시제품 제작, 해외 마케팅 비용을 지원합니다.
+          </p>
+
+          <div class="space-y-2 text-[11px] text-slate-300">
+            <div class="p-2.5 bg-slate-950 rounded border border-slate-800">
+              <strong class="text-purple-300 block mb-0.5">수출바우처 (내수기업 트랙):</strong>
+              수출 실적이 0원이어도 신청 가능(3,000만원 한도, 정부 70% 지원). 영문 카탈로그 제작, 해외 규격 인증, 슈나이더 APAC 동남아 IDC 진출 준비.
+            </div>
+            <div class="p-2.5 bg-slate-950 rounded border border-slate-800">
+              <strong class="text-purple-300 block mb-0.5">중소기업 혁신바우처:</strong>
+              2년차 시제품 외주제작 및 시험인증 비용을 최대 5,000만원까지 바우처로 지원(중기부).
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: [신설] 기업인증 풀세트 & 영등포·과밀억제권역 세무 전략 -->
+    <section id="cert-tax-regional" class="space-y-6">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Section 5 (Enterprise Certifications & Tax Strategy)</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">기업인증 풀세트 & 영등포구 과밀억제권역 세무 전략</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-sky-950 text-sky-300 border border-sky-800">Certifications & Tax Roadmap</span>
+      </div>
+
+      <!-- 1. 기업인증 풀세트 및 전문기업 지정 타당성 총정리 -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 text-xs">
+        <h3 class="text-sm font-bold text-white flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+          1. 7대 기업인증 및 전문기업 지정 적격성 총정리
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-[11px]">
+          <!-- 연구소/전담부서 -->
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <div class="flex justify-between items-center">
+              <strong class="text-white font-bold">연구개발전담부서 (KOITA)</strong>
+              <span class="text-emerald-400 font-bold">1년차 즉시 가능</span>
+            </div>
+            <p class="text-slate-400 leading-relaxed">
+              2026 신법 기준 소기업 1인 특례. 이공계 학사/기사 채용 즉시 1m 파티션 구획으로 인가. R&D 세액공제 25% + 정부과제 필수 자격.
+            </p>
+          </div>
+
+          <!-- 벤처기업 -->
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <div class="flex justify-between items-center">
+              <strong class="text-white font-bold">벤처기업확인 (기보 혁신성장)</strong>
+              <span class="text-emerald-400 font-bold">1년차 하반기 필수</span>
+            </div>
+            <p class="text-slate-400 leading-relaxed">
+              기술거래사 특허 이전 + 전담부서로 기보 70점 돌파. <strong>과밀억제권역 법인세 50% 감면(조특법 제6조)의 유일한 법적 구명줄</strong>.
+            </p>
+          </div>
+
+          <!-- ISO 3종 -->
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <div class="flex justify-between items-center">
+              <strong class="text-white font-bold">ISO 9001 / 14001 / 45001</strong>
+              <span class="text-emerald-400 font-bold">1년차 상반기 구축</span>
+            </div>
+            <p class="text-slate-400 leading-relaxed">
+              자문위원(심사원) 직접 수행. CGL 손해보험 갱신 시 보험료 20~30% 할인 및 대기업 협력사 등록 필수 요건 충족.
+            </p>
+          </div>
+
+          <!-- 소부장 전문기업 -->
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <div class="flex justify-between items-center">
+              <strong class="text-white font-bold">소부장 전문기업 확인 (산업부)</strong>
+              <span class="text-amber-400 font-bold">2~3년차 추진</span>
+            </div>
+            <p class="text-slate-400 leading-relaxed">
+              전력변환장치(UPS) 및 공조장비가 소부장 범위에 포함됨. 피지컬 AI 제어기 OEM 제조 매출 비중 50% 달성 시 신청 (병역특례/조달 가점).
+            </p>
+          </div>
+
+          <!-- 뿌리기업 -->
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <div class="flex justify-between items-center">
+              <strong class="text-white font-bold">뿌리기업 확인</strong>
+              <span class="text-red-400 font-bold">적용 대상 제외 (불가)</span>
+            </div>
+            <p class="text-slate-400 leading-relaxed">
+              <strong>제외 사유:</strong> 「뿌리산업법」상 금형·열처리·용접 등 14대 공정의 '공장등록증을 보유한 제조공장' 대상이므로, SI 엔지니어링 기업은 법적 제외 대상임.
+            </p>
+          </div>
+
+          <!-- 이노비즈 / 메인비즈 -->
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <div class="flex justify-between items-center">
+              <strong class="text-white font-bold">이노비즈 / 메인비즈</strong>
+              <span class="text-indigo-400 font-bold">3년차 도래 시 취득</span>
+            </div>
+            <p class="text-slate-400 leading-relaxed">
+              법령상 '업력 3년 이상' 필수 요건. 2년차까지 특허 및 결산 실적을 축적한 후 3년차 시작과 동시에 기술혁신형(이노비즈) 획득.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. 영등포구 과밀억제권역 법인세 감면 & 대표자 연령별 정책 팩트 -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 text-xs">
+        <h3 class="text-sm font-bold text-white flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          2. 영등포구(과밀억제권역) 법인세 감면 & 대표자 연령별(청년 vs 비청년) 혜택 팩트
+        </h3>
+
+        <!-- 법인세 감면 비교표 -->
+        <div class="p-4 bg-slate-950 rounded-lg border border-slate-800 space-y-2">
+          <strong class="text-emerald-300 block text-xs font-bold">조세특례제한법 제6조 (창업중소기업 세액감면) 정밀 대조표</strong>
+          <p class="text-slate-400 text-[11px] leading-relaxed">
+            사업장 소재지인 서울 영등포구 문래동은 「수도권정비계획법」상 <strong>과밀억제권역</strong>입니다. 대표자의 연령 및 벤처기업 인증 여부에 따라 법인세 감면율이 극단적으로 갈립니다.
+          </p>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-slate-300 border border-slate-800 text-[11px]">
+              <thead class="bg-slate-900 text-slate-400 border-b border-slate-800">
+                <tr>
+                  <th class="p-2">구분</th>
+                  <th class="p-2">과밀억제권역 '외' (지방/용인 등)</th>
+                  <th class="p-2 text-amber-300 font-bold">과밀억제권역 '내' (서울 영등포 문래동)</th>
+                  <th class="p-2">비고 (법적 근거)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800">
+                <tr>
+                  <td class="p-2 font-bold text-white">청년 창업 (만 15~34세)</td>
+                  <td class="p-2 text-emerald-400">법인세 100% 감면 (5년간)</td>
+                  <td class="p-2 text-emerald-400 font-bold">법인세 50% 감면 (5년간)</td>
+                  <td class="p-2 text-slate-400">군 복무 기간(최대 6년) 추가 인정 (최대 40세)</td>
+                </tr>
+                <tr>
+                  <td class="p-2 font-bold text-white">비청년 일반 창업 (만 35세 이상)</td>
+                  <td class="p-2 text-sky-400">법인세 50% 감면 (5년간)</td>
+                  <td class="p-2 text-red-400 font-bold">법인세 0% (감면 전액 배제)</td>
+                  <td class="p-2 text-slate-400">일반 창업 시 과밀권역은 혜택 없음</td>
+                </tr>
+                <tr class="bg-purple-950/20">
+                  <td class="p-2 font-bold text-purple-300">★ 벤처기업 창업감면 (3년내 벤처확인)</td>
+                  <td class="p-2 text-purple-300">법인세 50% 감면 (5년간)</td>
+                  <td class="p-2 text-purple-300 font-bold">법인세 50% 감면 (5년간 100% 부활)</td>
+                  <td class="p-2 text-purple-300 font-semibold">조특법 제6조 제2항 적용 (비청년 대표 구명줄)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="p-2.5 bg-amber-950/20 border border-amber-900/40 rounded text-[11px] text-amber-300">
+            💡 <strong>핵심 전략 결론:</strong> 대표자가 만 34세 이하 청년이라면 영등포 소재 법인이라도 5년간 법인세 50%가 자동 감면됩니다. 
+            만약 <strong>대표자가 만 35세 이상 비청년이라면 일반 창업감면은 0원(배제)</strong>이 되므로, 창업 3년 이내에 반드시 <strong>벤처기업 인증을 취득해야만 5년간 법인세 50% 감면을 완벽히 되살릴 수 있습니다.</strong>
+          </div>
+        </div>
+
+        <!-- 대표자 연령별 정책지원 혜택 비교 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-[11px]">
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1.5">
+            <strong class="text-sky-300 block font-bold">[대표자가 만 39세 이하 청년인 경우 혜택]</strong>
+            <ul class="space-y-1 text-slate-300 list-disc list-inside">
+              <li><strong>고용지원금 5인 미만 특례:</strong> 업종 코드와 무관하게 '청년창업기업'으로 즉시 승인.</li>
+              <li><strong>중진공 청년전용창업자금:</strong> 연 2.5% 고정금리, 최대 1억원 운전자금 대출.</li>
+              <li><strong>기보 청년창업특례보증:</strong> 보증비율 95~100%, 보증료율 0.3% 우대.</li>
+              <li><strong>창업중소기업 세액감면:</strong> 만 34세 이하인 경우 5년간 법인세 50% 감면.</li>
+            </ul>
+          </div>
+
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1.5">
+            <strong class="text-purple-300 block font-bold">[대표자가 만 40세 이상 비청년인 경우 대응 전략]</strong>
+            <ul class="space-y-1 text-slate-300 list-disc list-inside">
+              <li><strong>고용지원금:</strong> 사업자등록 및 고용보험에 <span class="text-white font-bold">지식서비스 코드(62021)</span> 등재 필수.</li>
+              <li><strong>법인세 50% 감면:</strong> 창업 3년 이내 <span class="text-white font-bold">혁신성장 벤처기업 인증</span> 필수 (조특법 제6조 2항).</li>
+              <li><strong>정책자금:</strong> 영등포구 저리기금(1.5%) + 중진공 창업기반자금 + 기보 일반창업보증 활용.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 영등포 지역 특화 지원사업 -->
+        <div class="p-3.5 bg-slate-950 rounded-lg border border-slate-800 space-y-2">
+          <strong class="text-emerald-300 block text-xs font-bold">[영등포구 및 지식산업센터 특화 정책 혜택]</strong>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px] text-slate-300">
+            <div class="p-2.5 bg-slate-900 rounded border border-slate-800">
+              <strong class="text-white block font-bold mb-0.5">영등포구 중소기업육성기금 융자:</strong>
+              영등포구청 일자리경제과 운영, <span class="text-emerald-400 font-bold">연 1.5% 고정금리</span>, 업체당 <span class="text-emerald-400 font-bold">최대 2억 원</span> (1년 거치 4년 균등분할상환). 지식산업·벤처기업 대상 최우선 지원.
+            </div>
+            <div class="p-2.5 bg-slate-900 rounded border border-slate-800">
+              <strong class="text-white block font-bold mb-0.5">에이스하이테크시티2 지식산업센터 세제:</strong>
+              지식산업센터 입주 적격 업종 영위 시 지방세특례제한법에 따른 취득세 35% 감면 및 재산세 35% 감면 혜택 유지 (514호 사업장).
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: 인사·노무 & 정책지원금·세제 혜택 극대화 전략 -->
+    <section id="employment-benefits" class="space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Section 6</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">인사·노무 & 정책지원금·세제혜택 통합 가이드</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-sky-950 text-sky-300 border border-sky-800">HR & Tax Optimization</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 text-xs">
+        
+        <!-- 도약장려금 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-white text-base">청년일자리도약장려금</h3>
+            <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800 font-bold text-[10px]">연 최대 720만원</span>
+          </div>
+
+          <p class="text-slate-300 leading-relaxed text-[11px]">
+            만 15~34세 취업애로청년을 정규직으로 채용하여 6개월 이상 고용 유지 시, 기업에 1년간 총 720만 원의 인건비를 현금 지원합니다.
+          </p>
+
+          <div class="space-y-2 text-[11px]">
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+              <strong class="text-sky-300 block font-semibold">5인 미만 참여 경로:</strong>
+              <p class="text-slate-400">
+                - 대표자가 만 39세 이하인 경우: <span class="text-white">청년창업 특례로 즉시 승인</span><br>
+                - 대표자가 만 40세 이상인 경우: <span class="text-white">지식서비스 업종코드(62021) 등재 필수</span>
+              </p>
+            </div>
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+              <strong class="text-emerald-300 block font-semibold">취업애로 인정 기준:</strong>
+              <p class="text-slate-400">
+                연속 4개월 이상 실업 상태이거나, 최종학교 졸업 후 고용보험 가입기간이 통산 12개월 미만인 사회초년생.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 두루누리 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-white text-base">두루누리 사회보험료 지원</h3>
+            <span class="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800 font-bold text-[10px]">보험료 80% 지원</span>
+          </div>
+
+          <p class="text-slate-300 leading-relaxed text-[11px]">
+            10인 미만 소규모 사업장의 신규 근로자 및 사업주가 부담하는 국민연금·고용보험료의 80%를 최대 36개월간 지원합니다.
+          </p>
+
+          <div class="space-y-2 text-[11px]">
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+              <strong class="text-purple-300 block font-semibold">급여 설계 최적화:</strong>
+              <p class="text-slate-400">
+                월평균보수 270만원 미만 요건 충족을 위해, 연봉 3,200만원 계약 시 <span class="text-white font-bold">"기본급 246.6만원 + 비과세 식대 20만원"</span>으로 근로계약서를 분리 작성합니다.
+              </p>
+            </div>
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+              <strong class="text-sky-300 block font-semibold">신규 가입자 요건:</strong>
+              <p class="text-slate-400">
+                신청일 직전 1년간(12개월간) 고용보험/국민연금 가입 이력이 전혀 없는 근로자 대상.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 통합고용세액공제 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-white text-base">통합고용세액공제 (조특법 29조의8)</h3>
+            <span class="px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800 font-bold text-[10px]">3개년 4,000만원 공제</span>
+          </div>
+
+          <p class="text-slate-300 leading-relaxed text-[11px]">
+            수도권 중소기업이 청년 정규직을 고용할 경우, 3년간 법인세에서 직접 차감하는 세제 혜택입니다 (미사용액은 10년간 이월공제 가능).
+          </p>
+
+          <div class="space-y-2 text-[11px]">
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+              <strong class="text-sky-300 block font-semibold">2026년 개편 차등 공제액:</strong>
+              <p class="text-slate-400">
+                1년차 700만 / 2년차 1,600만 / 3년차 1,700만 ➔ <span class="text-emerald-400 font-bold">청년 1인당 총 4,000만원 공제</span>.
+              </p>
+            </div>
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+              <strong class="text-emerald-300 block font-semibold">사후관리 추징 폐지:</strong>
+              <p class="text-slate-400">
+                중도 퇴사 시 과거 공제세액 전액 추징 제도가 폐지되어 세무 리스크가 완전히 해소되었습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: 글로벌 계약 & 책임보험(CGL) 체결 전략 -->
+    <section id="enterprise-risk" class="space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Section 7</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">글로벌 엔터프라이즈 파트너십 & 계약 리스크 관리</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-amber-950 text-amber-300 border border-amber-800">Enterprise Contract & CGL</span>
+      </div>
+
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 text-xs">
+        <div class="p-4 bg-slate-950 rounded-lg border border-slate-800 space-y-2">
+          <strong class="text-amber-300 block text-sm font-bold">외국계 CGL(영업배상책임보험) 체결 성과의 전략적 의미</strong>
+          <p class="text-slate-300 leading-relaxed text-[11px]">
+            외국계 글로벌 기업은 본사 컴플라이언스 기준에 따라 <strong>영문 CGL(Commercial General Liability, 보상한도 10억~30억원)</strong> 증권과 함께 
+            <span class="text-white font-semibold">① 추가피보험자(Additional Insured)</span> 및 <span class="text-white font-semibold">② 대위권 포기(Waiver of Subrogation)</span> 특약을 요구합니다. 
+            신설 1년차 법인이 데이터센터 고압전력 설비 분야에서 이를 정식 체결한 것은 대기업 CSP 오픈이노베이션 및 공공 R&D 평가에서 <strong>막강한 대외 신인도 자산</strong>으로 작용합니다.
+          </p>
+        </div>
+
+        <h3 class="font-bold text-white text-sm pt-1">발주처 원도급 계약서 체결 시 필수 반영 3대 표준 조항</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-sky-300 block">1. 결과적 손해 배제</strong>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              설비 결함 시에도 서버 다운타임 영업 손실, 데이터 유실 등 <strong>간접적·결과적 손해에 대한 배상 책임을 면책</strong>하는 표준 조항 반영.
+            </p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-sky-300 block">2. 총 책임한도 캡 (LOL)</strong>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              회사의 총 손해배상 책임을 <strong>"해당 계약금액의 1배수(또는 실제 가입된 보험금 한도)"</strong>로 제한하여 무한 배상 리스크 차단.
+            </p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-sky-300 block">3. 외주 시공사 백투백 보험</strong>
+            <p class="text-slate-400 text-[11px] leading-relaxed">
+              현장 배선 시공을 맡는 협력업체와의 계약서에 <strong>시공사 배상책임보험 가입 의무화 및 당사 피보험자 추가</strong>를 명문화하여 위험 분산.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-3 bg-indigo-950/30 border border-indigo-800/50 rounded-lg text-slate-300 flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <strong class="text-indigo-300 font-bold block mb-0.5">💡 차기 CGL 보험 갱신 시 보험료 20~30% 절감 전략:</strong>
+            <span class="text-slate-400 text-[11px]">1년 무사고 실적 증명과 함께 자문위원이 구축할 <strong>ISO 45001(안전보건경영시스템) 인증서</strong>를 보험사에 제출하면 우량 사업장으로 인정받아 보험료 대폭 할인 및 무심사 갱신이 가능합니다.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: 법인 정관 및 지배구조 정비 가이드 -->
+    <section id="corporate-governance" class="space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Section 8</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">법인 정관 7대 정비 및 지배구조 방어</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Corporate Governance</span>
+      </div>
+
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 text-xs">
+        <p class="text-slate-300 leading-relaxed">
+          법인 설립 시 인터넷등기소의 '표준정관'을 그대로 사용하면 향후 임원 퇴직금 비용 인정이 부인되거나 2인 공동창업 체제에서 지분 분쟁이 발생할 수 있습니다. 임시주총을 통해 아래 7대 핵심 조항을 정비합니다.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[11px]">
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-indigo-300 block font-bold">1. 임원 퇴직금 규정</strong>
+            <p class="text-slate-400">정관 위임 규정 및 퇴직금 지급률(월보수 × 근속연수 × 2~3배수) 명시 (세법상 전액 손금산입).</p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-indigo-300 block font-bold">2. 임원 유족보상금</strong>
+            <p class="text-slate-400">업무상 재해 또는 유고 시 유족보상금 지급 근거 마련 (법인 경비 처리 및 상속세 절감).</p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-indigo-300 block font-bold">3. 스톡옵션 (주식매수선택권)</strong>
+            <p class="text-slate-400">향후 영입할 핵심 수석 엔지니어 및 기술 인력의 락인(Lock-in)을 위한 발행 한도(10~20%) 신설.</p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-indigo-300 block font-bold">4. 중간배당 및 차등배당</strong>
+            <p class="text-slate-400">사업연도 중 자금 회수 및 주주 간 지분 비율과 무관하게 차등 배당할 수 있는 근거 조항 마련.</p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-indigo-300 block font-bold">5. 자기주식 취득 (자사주)</strong>
+            <p class="text-slate-400">상법 개정에 맞춘 배당가능이익 범위 내 자사주 매입 규정 (주주 자금 엑시트 및 지분율 방어).</p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1">
+            <strong class="text-indigo-300 block font-bold">6. 목적사업 확대</strong>
+            <p class="text-slate-400">전기공사업, 정보통신공사업, 소프트웨어 개발, 학술연구개발용역 등 미래 면허 사업 일괄 등재.</p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-1 sm:col-span-2">
+            <strong class="text-emerald-300 block font-bold">7. 주주 간 계약서 (Shareholders' Agreement) 체결</strong>
+            <p class="text-slate-400">2인 공동창업 시 50:50 의결권 데드락 방지 조항, 경업금지 의무, 지분 임의 처분 제한(우선매수권) 명문화.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: 행정 실무 사전 점검표 (Administrative Checklist) -->
+    <section id="administrative-checklist" class="space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Section 9</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">행정 실무 사전 적격 요건 점검표 (Checklist)</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">Pre-requisites Checklist</span>
+      </div>
+
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 text-xs">
+        <p class="text-slate-300 leading-relaxed">
+          각종 정부지원제도, R&D 과제 접수, 특허사업 및 기업인증 신청 시 행정 반려를 예방하기 위해 사전에 반드시 확인해야 할 실무 점검 항목입니다.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-[11px]">
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-2">
+            <strong class="text-emerald-300 block font-bold">[채용 전·직후 인사 및 행정 점검표]</strong>
+            <ul class="space-y-1.5 text-slate-300">
+              <li class="flex items-start gap-1.5">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>사업자등록 및 고용보험 주업종 코드:</strong> 62021(시스템 구축) 등재 확인.</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>채용 대상자 실업 및 학적 검증:</strong> 고용보험 이력서 징구 (연속 4개월 실업 여부 확인, 주간대 재학/휴학 여부 확인).</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>개인사업자 폐업 확인:</strong> 청년 본인 명의 사업자등록 보유 시 입사 전 폐업 완료 확인.</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>근로계약서 비과세 식대 명시:</strong> 기본급 + 비과세 식대 20만원 분리 기재.</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>신청 기한 엄수:</strong> 입사일로부터 3개월 이내 고용24 참여 승인 신청.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 space-y-2">
+            <strong class="text-sky-300 block font-bold">[R&D 과제 접수 & 재무 세무 점검표]</strong>
+            <ul class="space-y-1.5 text-slate-300">
+              <li class="flex items-start gap-1.5">
+                <span class="text-sky-400 font-bold">✓</span>
+                <span><strong>범부처통합연구지원시스템(IRIS):</strong> 기업회원 가입 및 기관총괄담당자 지정 완료.</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <span class="text-sky-400 font-bold">✓</span>
+                <span><strong>지역지식재산센터(RIPC):</strong> 사업관리시스템 가입 및 IP나래 프로그램 사전 상담 완료.</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <span class="text-sky-400 font-bold">✓</span>
+                <span><strong>연구전담요원 자격 요건:</strong> 이공계 학사 졸업증명서 또는 자격증 사본 확보.</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <span class="text-sky-400 font-bold">✓</span>
+                <span><strong>전담요원 업무 분장:</strong> 등기임원 배제 및 현장 단순 시공/영업 겸직 배제 관리.</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <span class="text-sky-400 font-bold">✓</span>
+                <span><strong>1기 결산 건전성 유지:</strong> 당기순손실(적자) 방지 및 가지급금 무발생 관리.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: 실시간 경제적 효과 시뮬레이터 -->
+    <section id="calculator" class="space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-purple-400">Section 10</span>
+          <h2 class="text-xl md:text-2xl font-bold text-white">채용 규모별 경제적 효과 시뮬레이터</h2>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-purple-950 text-purple-300 border border-purple-800">Benefit Simulator</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 bg-slate-900/80 border border-slate-800 rounded-xl p-6">
+        <div class="space-y-4 text-xs">
+          <h3 class="font-bold text-white text-sm">채용 조건 설정</h3>
+          
+          <div>
+            <label class="block text-slate-300 font-medium mb-1">채용 예정 인원수 (명)</label>
+            <input type="number" id="hireCount" min="1" max="10" value="1" oninput="calculateBenefits()" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white font-mono focus:border-sky-500 outline-none">
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-medium mb-1">책정 1인 연봉 (만원)</label>
+            <input type="number" id="annualSalary" step="100" min="2400" max="6000" value="3000" oninput="calculateBenefits()" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white font-mono focus:border-sky-500 outline-none">
+            <span class="text-[11px] text-slate-500 mt-1 block">현재 잡코리아 채용 공고 범위: 2,800만 ~ 3,200만원</span>
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-medium mb-1">채용 대상 연령</label>
+            <select id="isYouth" onchange="calculateBenefits()" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white focus:border-sky-500 outline-none">
+              <option value="youth">청년 (만 15세 ~ 34세 이하)</option>
+              <option value="adult">일반 성인 (만 35세 이상)</option>
+            </select>
+          </div>
+
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 text-slate-400 space-y-1">
+            <div class="flex justify-between">
+              <span>월환산 급여:</span>
+              <span id="monthlySalaryDisp" class="text-white font-mono font-bold">250.0 만원</span>
+            </div>
+            <div class="flex justify-between">
+              <span>두루누리(270만 미만):</span>
+              <span id="durunuriStatus" class="text-emerald-400 font-semibold">지원 적격</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 bg-slate-950 border border-slate-800 rounded-xl p-5 flex flex-col justify-between space-y-4">
+          <div>
+            <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">예상 총 경제적 수혜 효과 (지원금 + 3개년 법인세 감면)</span>
+            <div id="totalBenefit" class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mt-1 font-mono">
+              47,200,000 원
+            </div>
+            <p class="text-xs text-slate-400 mt-1">기업이 실제 수령하는 현금성 장려금과 3년간 법인세 직접 공제 합산액입니다.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div class="bg-slate-900 p-3 rounded-lg border border-slate-800">
+              <span class="text-slate-400">청년도약장려금 (1년)</span>
+              <div id="grantAmount" class="text-base font-bold text-emerald-300 mt-1 font-mono">720 만원</div>
+              <span class="text-[10px] text-slate-500 mt-0.5 block">현금 지급</span>
+            </div>
+            <div class="bg-slate-900 p-3 rounded-lg border border-slate-800">
+              <span class="text-slate-400">통합고용세액공제 (3개년)</span>
+              <div id="taxCreditAmount" class="text-base font-bold text-sky-300 mt-1 font-mono">4,000 만원</div>
+              <span class="text-[10px] text-slate-500 mt-0.5 block">법인세 직접 감면</span>
+            </div>
+            <div class="bg-slate-900 p-3 rounded-lg border border-slate-800">
+              <span class="text-slate-400">두루누리 사회보험료 (3개년)</span>
+              <div id="insuranceAmount" class="text-base font-bold text-purple-300 mt-1 font-mono">약 620 만원</div>
+              <span class="text-[10px] text-slate-500 mt-0.5 block">보험료 80% 지원</span>
+            </div>
+          </div>
+
+          <div class="p-3 bg-indigo-950/30 border border-indigo-900/50 rounded-lg text-xs text-indigo-200">
+            💡 <strong>전략 제언:</strong> 신규 엔지니어 1인 채용 시 연봉 3,000만원을 지급하더라도, 정책지원금과 3개년 법인세 공제를 결합하면 <strong class="text-white">초기 1~2년간 실질 인건비 부담을 완전히 상쇄</strong>할 수 있습니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-500 space-y-1">
+    <p class="font-medium text-slate-400">(주)유에프씨인프라 중장기 경영전략 및 스케일업 자문 보고서</p>
+    <p>© 2026 UFC Infra Co., Ltd. & Senior Management Consulting. All rights reserved.</p>
+  </footer>
+
+  <!-- Script for Interactive Calculator -->
+  <script>
+    function calculateBenefits() {
+      const count = parseInt(document.getElementById('hireCount').value) || 1;
+      const salary = parseFloat(document.getElementById('annualSalary').value) || 3000;
+      const isYouth = document.getElementById('isYouth').value === 'youth';
+
+      const monthlySalary = (salary / 12).toFixed(1);
+      document.getElementById('monthlySalaryDisp').innerText = monthlySalary + ' 만원';
+
+      const durunuriEl = document.getElementById('durunuriStatus');
+      const isDurunuri = monthlySalary < 270;
+      if (isDurunuri) {
+        durunuriEl.innerText = '지원 적격 (80% 지원)';
+        durunuriEl.className = 'text-emerald-400 font-semibold';
+      } else {
+        durunuriEl.innerText = '비과세 식대 분리 요망';
+        durunuriEl.className = 'text-amber-400 font-semibold';
+      }
+
+      const grantPerPerson = isYouth ? 720 : 0;
+      const totalGrant = grantPerPerson * count;
+      document.getElementById('grantAmount').innerText = (totalGrant).toLocaleString() + ' 만원';
+
+      const taxCreditPerPerson = isYouth ? 4000 : 2300;
+      const totalTaxCredit = taxCreditPerPerson * count;
+      document.getElementById('taxCreditAmount').innerText = (totalTaxCredit).toLocaleString() + ' 만원';
+
+      const insurancePerPerson = isDurunuri ? 620 : 0;
+      const totalInsurance = insurancePerPerson * count;
+      document.getElementById('insuranceAmount').innerText = '약 ' + (totalInsurance).toLocaleString() + ' 만원';
+
+      const grandTotalWon = (totalGrant + totalTaxCredit + totalInsurance) * 10000;
+      document.getElementById('totalBenefit').innerText = grandTotalWon.toLocaleString() + ' 원';
+    }
+
+    window.onload = calculateBenefits;
+  </script>
+</body>
+</html>
